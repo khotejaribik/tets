@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-04 20:36:50.064309",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_group",
+  "column_break_4b0sw",
+  "item_name",
+  "warranty",
+  "section_break_ytpc2",
+  "image",
+  "image_view",
+  "quantity_rate_section",
+  "qty",
+  "column_break_dsy6f",
+  "rate",
+  "column_break_h326c",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4b0sw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.item_group",
+   "fieldname": "item_group",
+   "fieldtype": "Data",
+   "label": "Item Group",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.warranty_period",
+   "fieldname": "warranty",
+   "fieldtype": "Data",
+   "label": "Warranty (Days)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_ytpc2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "item_code.image",
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "label": "Image"
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View",
+   "options": "image"
+  },
+  {
+   "fieldname": "quantity_rate_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity and Rate"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_h326c",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_dsy6f",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-04 20:48:30.891464",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Guest Quotation Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

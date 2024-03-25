@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-04 20:45:11.008966",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "posting_date",
+  "profile_section",
+  "guest_name",
+  "pan_vat",
+  "address",
+  "column_break_jf3yw",
+  "company_name",
+  "contact_number",
+  "items_section",
+  "items",
+  "section_break_per4u",
+  "total_qty",
+  "column_break_okuuf",
+  "sub_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "GST-QTN-.YYYY.-.####"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "profile_section",
+   "fieldtype": "Section Break",
+   "label": "Profile"
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pan_vat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PAN / VAT",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jf3yw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "items_section",
+   "fieldtype": "Section Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Guest Quotation Item"
+  },
+  {
+   "fieldname": "section_break_per4u",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity"
+  },
+  {
+   "fieldname": "column_break_okuuf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_total",
+   "fieldtype": "Currency",
+   "label": "Sub Total",
+   "options": "currency"
+  }
+ ],
+ "links": [],
+ "modified": "2023-12-07 08:54:38.487690",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Guest Quotation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

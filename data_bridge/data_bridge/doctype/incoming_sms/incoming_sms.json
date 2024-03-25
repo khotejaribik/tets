@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "creation": "2023-11-30 16:13:19.763366",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "number_section",
+  "mobile_number",
+  "guest_section",
+  "guest_quotation_create",
+  "partner_section",
+  "partner_quotation_create",
+  "lead_section",
+  "lead_create",
+  "pro_partner_section",
+  "pro_partner_create",
+  "customer_birthday",
+  "birthday_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "number_section",
+   "fieldtype": "Section Break",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "guest_section",
+   "fieldtype": "Section Break",
+   "label": "Guest Quotation"
+  },
+  {
+   "fieldname": "partner_section",
+   "fieldtype": "Section Break",
+   "label": "Partner Quotation"
+  },
+  {
+   "fieldname": "lead_section",
+   "fieldtype": "Section Break",
+   "label": "Lead"
+  },
+  {
+   "fieldname": "pro_partner_section",
+   "fieldtype": "Section Break",
+   "label": "Pro  Partner"
+  },
+  {
+   "fieldname": "customer_birthday",
+   "fieldtype": "Section Break",
+   "label": "Customer Birthday"
+  },
+  {
+   "fieldname": "birthday_message",
+   "fieldtype": "Small Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "guest_quotation_create",
+   "fieldtype": "Small Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "partner_quotation_create",
+   "fieldtype": "Small Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "lead_create",
+   "fieldtype": "Small Text",
+   "label": "Message"
+  },
+  {
+   "fieldname": "pro_partner_create",
+   "fieldtype": "Small Text",
+   "label": "Message"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-04 22:42:28.353447",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Incoming SMS",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

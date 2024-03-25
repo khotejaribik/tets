@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "creation": "2023-11-30 13:12:36.488643",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "otp_length_section",
+  "otp_length",
+  "column_break_44iyt",
+  "otp_expires_in",
+  "guest_settings",
+  "disable_login",
+  "column_break_vxvxh",
+  "otp_limit"
+ ],
+ "fields": [
+  {
+   "fieldname": "otp_length_section",
+   "fieldtype": "Section Break",
+   "label": "OTP Code Length"
+  },
+  {
+   "default": "4",
+   "fieldname": "otp_length",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "OTP code length",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_44iyt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Time in Minutes",
+   "fieldname": "otp_expires_in",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "OTP expires in",
+   "reqd": 1
+  },
+  {
+   "fieldname": "guest_settings",
+   "fieldtype": "Section Break",
+   "label": "Guest Settings"
+  },
+  {
+   "fieldname": "column_break_vxvxh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "OTP limit in numbers",
+   "fieldname": "otp_limit",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "OTP Limit",
+   "reqd": 1
+  },
+  {
+   "description": "Disable login if OTP limit exceeds (Time in Hours)",
+   "fieldname": "disable_login",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Disable Login",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-07 09:30:30.095538",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Quotation OTP Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

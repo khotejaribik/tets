@@ -1,0 +1,436 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-15 13:36:54.802053",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "details_tab",
+  "quotation_name",
+  "column_break_zkfxr",
+  "transaction_date",
+  "column_break_458kj",
+  "valid_till",
+  "info_section",
+  "my_company_name",
+  "select_section",
+  "seller",
+  "column_break_7wm0x",
+  "customer",
+  "seller_customer_section",
+  "seller_company_name",
+  "seller_name",
+  "seller_tax_id",
+  "seller_address",
+  "seller_contact_number",
+  "column_break_l9tpw",
+  "customer_company_name",
+  "customer_name",
+  "customer_address",
+  "customer_contact_number",
+  "items_tab",
+  "items",
+  "section_break_slkge",
+  "total_qty",
+  "column_break_xjxti",
+  "total",
+  "charge_section",
+  "additional_charge",
+  "section_break_gilww",
+  "taxable_charge",
+  "column_break_f2h3f",
+  "non_taxable_charge",
+  "sub_total",
+  "discount_section",
+  "discount_type",
+  "column_break_pvmpo",
+  "discount_percent",
+  "discount_amount",
+  "taxable_amount",
+  "tax_section",
+  "add_tax",
+  "tax_rate",
+  "column_break_6h7m5",
+  "tax_amount",
+  "total_section",
+  "net_total",
+  "column_break_bppss",
+  "grand_total",
+  "info_tab",
+  "terrms_condition_section",
+  "terms_conditions",
+  "notes_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "PTR-QUOT-.YYYY.-.####"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "quotation_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Quotation Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valid_till",
+   "fieldtype": "Date",
+   "label": "Valid Till"
+  },
+  {
+   "fieldname": "column_break_zkfxr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "info_section",
+   "fieldtype": "Section Break",
+   "label": "My Information"
+  },
+  {
+   "fieldname": "my_company_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "items_tab",
+   "fieldtype": "Tab Break",
+   "label": "Items"
+  },
+  {
+   "fieldname": "column_break_458kj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_section",
+   "fieldtype": "Section Break",
+   "label": "Select Seller & Customer"
+  },
+  {
+   "fieldname": "column_break_7wm0x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seller_customer_section",
+   "fieldtype": "Section Break",
+   "label": "Seller & Customer Profile"
+  },
+  {
+   "fetch_from": "seller.company_name",
+   "fieldname": "seller_company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "seller.seller_name",
+   "fieldname": "seller_name",
+   "fieldtype": "Data",
+   "label": "Seller Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "seller.tax_id",
+   "fieldname": "seller_tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "seller.address",
+   "fieldname": "seller_address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "seller.contact_number",
+   "fieldname": "seller_contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_l9tpw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer.company_name",
+   "fieldname": "customer_company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.address",
+   "fieldname": "customer_address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer.contact_number",
+   "fieldname": "customer_contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Partner Quotation Item"
+  },
+  {
+   "fieldname": "section_break_slkge",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xjxti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sub_total",
+   "fieldtype": "Currency",
+   "label": "Sub Total"
+  },
+  {
+   "fieldname": "charge_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Charge"
+  },
+  {
+   "fieldname": "additional_charge",
+   "fieldtype": "Table",
+   "label": "Additional Charge",
+   "options": "Partner Quotation Additional Charge"
+  },
+  {
+   "fieldname": "section_break_gilww",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "taxable_charge",
+   "fieldtype": "Currency",
+   "label": "Taxable Charge",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_f2h3f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "non_taxable_charge",
+   "fieldtype": "Currency",
+   "label": "Non Taxable Charge",
+   "options": "currency"
+  },
+  {
+   "fieldname": "discount_type",
+   "fieldtype": "Select",
+   "label": "Discount Type",
+   "options": "\nPercentage\nAmount"
+  },
+  {
+   "depends_on": "eval:doc.discount_type == \"Percentage\"",
+   "fieldname": "discount_percent",
+   "fieldtype": "Currency",
+   "label": "Discount Percentage (%)",
+   "options": "currency"
+  },
+  {
+   "depends_on": "eval:doc.discount_type == \"Amount\"",
+   "fieldname": "discount_amount",
+   "fieldtype": "Currency",
+   "label": "Discount Amount (Rs)",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_pvmpo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "taxable_amount",
+   "fieldtype": "Currency",
+   "label": "Taxable Amount",
+   "options": "currency"
+  },
+  {
+   "fieldname": "tax_section",
+   "fieldtype": "Section Break",
+   "label": "Tax"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_tax",
+   "fieldtype": "Check",
+   "label": "Add Tax"
+  },
+  {
+   "depends_on": "eval:doc.add_tax == 1",
+   "fieldname": "tax_rate",
+   "fieldtype": "Float",
+   "label": "Tax Rate"
+  },
+  {
+   "depends_on": "eval:doc.add_tax == 1",
+   "fieldname": "tax_amount",
+   "fieldtype": "Float",
+   "label": "Tax Amount"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Long Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "discount_section",
+   "fieldtype": "Section Break",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "info_tab",
+   "fieldtype": "Tab Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "terrms_condition_section",
+   "fieldtype": "Section Break",
+   "label": "Term and Conditions"
+  },
+  {
+   "fieldname": "terms_conditions",
+   "fieldtype": "Long Text",
+   "label": "Term and Conditions"
+  },
+  {
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_6h7m5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Float",
+   "label": "Net Total"
+  },
+  {
+   "fieldname": "column_break_bppss",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "my_company_name",
+   "fieldname": "seller",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select Seller",
+   "options": "Partner Seller Profile",
+   "reqd": 1
+  },
+  {
+   "depends_on": "my_company_name",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Select Customer",
+   "options": "Partner Customer Profile",
+   "reqd": 1
+  }
+ ],
+ "links": [],
+ "modified": "2023-12-19 14:10:31.648697",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Partner Quotation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

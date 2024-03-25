@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-07 10:01:50.247906",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "image",
+  "image_view",
+  "print_format"
+ ],
+ "fields": [
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Image",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image_view",
+   "fieldtype": "Image",
+   "label": "Image View",
+   "options": "image"
+  },
+  {
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Print Format",
+   "options": "Print Format",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2024-01-07 12:54:31.509679",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Partner Quotation Template Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

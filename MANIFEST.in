@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include data_bridge *.css
+recursive-include data_bridge *.csv
+recursive-include data_bridge *.html
+recursive-include data_bridge *.ico
+recursive-include data_bridge *.js
+recursive-include data_bridge *.json
+recursive-include data_bridge *.md
+recursive-include data_bridge *.png
+recursive-include data_bridge *.py
+recursive-include data_bridge *.svg
+recursive-include data_bridge *.txt
+recursive-exclude data_bridge *.pyc

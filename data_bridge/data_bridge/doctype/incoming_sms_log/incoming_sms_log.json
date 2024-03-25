@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "IN-SMS-.####",
+ "creation": "2023-11-30 15:57:19.604363",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sent_on",
+  "column_break_huina",
+  "message",
+  "section_break_d03br",
+  "sms_shootid",
+  "requested_customer",
+  "requested_number",
+  "column_break_ba1yh",
+  "user_type",
+  "purpose"
+ ],
+ "fields": [
+  {
+   "fieldname": "sent_on",
+   "fieldtype": "Datetime",
+   "label": "Sent On",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_huina",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message",
+   "fieldtype": "Small Text",
+   "label": "Message",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_d03br",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sms_shootid",
+   "fieldtype": "Data",
+   "label": "Sms Shoot Id",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_customer",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requested Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Requested Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ba1yh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "user_type",
+   "fieldtype": "Select",
+   "label": "User Type",
+   "options": "\nGuest\nPartner\nLead",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "Purpose",
+   "options": "\nQuotation\nAppointment\nPro Partner\nBecome a Partner\nBirthday",
+   "read_only": 1
+  }
+ ],
+ "in_create": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-30 16:08:11.842127",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Incoming SMS Log",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

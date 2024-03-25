@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "autoname": "field:delivery_note",
+ "creation": "2023-12-04 13:34:01.582205",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "posting_date",
+  "column_break_rmhgi",
+  "status",
+  "customer_information",
+  "company_name",
+  "feedback_section",
+  "delivery_note",
+  "packed",
+  "rating",
+  "column_break_udowa",
+  "feedback"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rmhgi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nReceived\nNot Received"
+  },
+  {
+   "fieldname": "customer_information",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "feedback_section",
+   "fieldtype": "Section Break",
+   "label": "Feedback"
+  },
+  {
+   "depends_on": "company_name",
+   "fieldname": "delivery_note",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Delivery Note",
+   "options": "Delivery Note",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "packed",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Was the product deliver well packed ?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "How would you rate the service of our delivery agent ?",
+   "options": "\n1\n2\n3\n4\n5"
+  },
+  {
+   "fieldname": "column_break_udowa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Text",
+   "label": "Feedback"
+  }
+ ],
+ "links": [],
+ "make_attachments_public": 1,
+ "modified": "2023-12-21 13:40:42.061947",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Delivery Note Feedback",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "delivery_note",
+ "track_changes": 1,
+ "track_seen": 1
+}

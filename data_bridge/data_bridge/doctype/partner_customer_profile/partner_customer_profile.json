@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-12-14 09:01:57.344361",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "info_section",
+  "my_company_name",
+  "customer_info",
+  "image",
+  "company_name",
+  "designation",
+  "customer_name",
+  "notes",
+  "column_break_h2rl3",
+  "tax_id",
+  "address",
+  "contact_number",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "PTR-CUST-.YYYY.-.####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "info_section",
+   "fieldtype": "Section Break",
+   "label": "My Information"
+  },
+  {
+   "fieldname": "my_company_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Company",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_h2rl3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "PAN / VAT"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "customer_info",
+   "fieldtype": "Section Break",
+   "label": "My Customer Profile"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  }
+ ],
+ "image_field": "image",
+ "links": [],
+ "modified": "2023-12-14 16:15:01.103286",
+ "modified_by": "Administrator",
+ "module": "Data Bridge",
+ "name": "Partner Customer Profile",
+ "name_case": "Title Case",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Customer",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
